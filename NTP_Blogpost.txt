@@ -1,7 +1,14 @@
-According to recent reports the volume of NTP traffic has been increased significantly. Growth of Mobile devices and consequently increment in their applications users like Snapchat has been considered as the main reason of amplification of NTP traffic. 
-The Lumen give us a unique opportunity to study Android applications behavior and analyzing how they utilize NTP.
+According to recent reports the volume of NTP traffic has been increased
+significantly. Growth of Mobile devices and consequently increment in their
+applications users like Snapchat has been considered as the main reason of
+amplification of NTP traffic. 
+The Lumen give us a unique opportunity to study Android applications behavior
+and analyzing how they utilize NTP.
 
-NTP requests of the following applications are recorded in Haystacks database. According to GooglePlay their number of installation is also indicated. The applications are sorted according to their number of NTP request which are exist in the database. 
+NTP requests of the following applications are recorded in Haystacks database.
+According to GooglePlay their number of installation is also indicated.
+The applications are sorted according to their number of NTP request which are
+exist in the database. 
 
 ID	Application Name	Number of installation
 1	whatsapp messenger	1,000,000,000 - 5,000,000,000
@@ -78,9 +85,16 @@ ID	Application Name	Number of installation
 72	4 pics 1 word	1,000,000 - 5,000,000
 
 
-Applications which GoogPlay wrap them in “Tools” category generate the most NTP request. Following, “Communication” and “Map & Navigation” categories take the second and the third places sequentially.
+Applications which GoogPlay wrap them in “Tools” category generate the most NTP
+request. Following, “Communication” and “Map & Navigation” categories take the
+second and the third places sequentially.
 
-75,49 % of NTP queries were sent to “2.android.pool.ntp.org”. However just 18% of the considered applications generate these queries. The following table represents a list of domains which are received NTP query from the applications. It also shoes the volume of NTP query which sent to the domains. In addition, the popularity of each domain is measured according to number of applications that send it a NTP query.
+75,49 % of NTP queries were sent to “2.android.pool.ntp.org”. However just 18%
+of the considered applications generate these queries. The following table
+represents a list of domains which are received NTP query from the applications.
+It also shoes the volume of NTP query which sent to the domains. In addition,
+the popularity of each domain is measured according to number of applications
+that send it a NTP query.
 
 
 NTP Domain	Query %	#APP
@@ -108,9 +122,25 @@ us.pool.ntp.org 	0.07 	1
 s2m.time.edu.cn 	0.07 	1
 glue.glue1u19589.n1.netalyzr.icsi.berkeley.edu 	0.07 	1
 
-We were suspicious about the domain identity as there is a possibility for applications to use NTP port number (123) to establish a UDP session for a malicious activity. Analyzing payload information can address our concern but it violates users privacy consequently. Instead, we send a NTP query directly to the each domain and analyze their respond. We received answer from all the domains in the list except “s2m.time.edu.cn ”. According to IPAddress.com website the domain is under “China Education and Research Network Center” authority. Considering the number of applications which sent NTP query to “s2m.time.edu.cn ” and the volume of query that it received, it is not possible to make any strong conclusion in regard of its identity. 
+We were suspicious about the domain identity as there is a possibility for
+applications to use NTP port number (123) to establish a UDP session for a
+malicious activity. Analyzing payload information can address our concern but
+it violates users privacy consequently. Instead, we send a NTP query directly to
+the each domain and analyze their respond. We received answer from all the
+domains in the list except “s2m.time.edu.cn ”. According to IPAddress.com
+website the domain is under “China Education and Research Network Center”
+authority. Considering the number of applications which sent NTP query to
+“s2m.time.edu.cn ” and the volume of query that it received, it is not possible
+to make any strong conclusion in regard of its identity. 
 
-Comparison the geographic region of generation and service of NTP queries, reveals that the queries do not always served by their nearest NTP pool. Consequently the communication delay  increases unnecessarily. The following table report the volume of queries that each NTP pool serves according to origin region of the queries. According to the table several pools such as “asia.pool.ntp.org” and “0.us.pool.ntp.org” receive considerable volume of NTP queries from outside of their region. It would be consequence of explicit NTP pool selection during an Android app development.   
+Comparison the geographic region of generation and service of NTP queries,
+reveals that the queries do not always served by their nearest NTP pool.
+Consequently the communication delay  increases unnecessarily. The following
+table report the volume of queries that each NTP pool serves according to origin
+region of the queries. According to the table several pools such as
+“asia.pool.ntp.org” and “0.us.pool.ntp.org” receive considerable volume of NTP
+queries from outside of their region. It would be consequence of explicit NTP
+pool selection during an Android app development.   
 
 
 			"Europe"	"North america"	"South america"	"Asia"	"Oceania"
@@ -134,7 +164,11 @@ us.pool.ntp.org	  100.0		_	_	_	_
 glue.glue1u19589.n1.netalyzr.icsi.berkeley.edu	_	  100.0		_	_	_
 
 
-In the conclusion we should confirm that there is a direct relation between increasing the number of mobile devices and the number of NTP flows by considering the Android application category which generate high volume of NTP query. It tickles security concern. Also the current trend of selecting NTP pool is not efficient and implies unnecessary delay to the communication. 
+In the conclusion we should confirm that there is a direct relation between
+increasing the number of mobile devices and the number of NTP flows by
+considering the Android application category which generate high volume of NTP
+query. It tickles security concern. Also the current trend of selecting NTP pool
+is not efficient and implies unnecessary delay to the communication. 
 
 
 
