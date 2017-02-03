@@ -11,42 +11,27 @@ illuminate the actual origin, revealing that Snapchat generate NTP traffic at a 
 Dan Drown work motivate us to look at Android application as a point of view of 
 their NTP activity. The Lumen (https://play.google.com/store/apps/details?id=edu.berkeley.icsi.haystack&hl=en)
 give us a unique opportunity to do the study. It provide information about 
-activity behavior of around 3000 android applicationsupports and has 1200 users 
+activity behavior of around 3000 android application supports and has 1200 users 
 from all around the world. 
 
 
 Based on Lumen records 72 applications use NTP including highly popular 
-appilication such as whatsapp, subway surfars, shazam, battery doctor and
+application such as whatsapp, subway surfars, shazam, battery doctor and
 officesuit + pfd editor. you can find the list of application and their number 
 of installation at the end of this post.
 
 
-As point of view of the application category 10 out of 32 categoris use NTP. 
+As point of view of the application category 10 out of 32 categories use NTP. 
 The application from "Tools", "Communication" and "Map & Navigation" categories 
-register the most number of NTP request in Lumen database sequentialy. 
+register the most number of NTP request in Lumen database sequentially. 
 The NTP query from the first two categories mostly is sent to "2.android.pool.ntp.org" 
-pool which NTP community preserves it for Android specificaly.
+pool which NTP community preserves it for Android specifically.
 
-Althought there is a specific NTP pool for android applications, only 18% of 
+Although there is a specific NTP pool for android applications, only 18% of 
 the application communicate with it. However the pool still replies to 
 significant volume of NTP query (75,49%) which android applications generate.
-This fact recommneds that just  limited number of android applications 
-with high number of installation choos the right NTP pool.
-
-We continue our research by investigating the geographical distribution of NTP
-pool and their android clients. Following list represents domains which recived 
-NTP query from android device of Lumen users. We need to make sure that the domains 
-are NTP servers to discared irrelevant data. User privacy protection prohibits 
-us to evaluate user payload information. Therefore we send NTP quiry to each domains 
-instead and check their replies. All the domaines return NTP reply except 
-s2m.time.edu.cn. IPAddress.com reports that the domain is under "China education 
-and reserach" authority. 
-The result climes that multiple NTP pools receive quries from outside of their
-region. For instance asia.pool.ntp.org pool received considerable volume (82.62%)
-of queiry from Europa. "0.us.pool.ntp.org" experiance the same situation. 
- 50% volume of its qury is orginated at Europa.
-
-
+This fact recommends that just  limited number of android applications 
+with high number of installation choose the right NTP pool.
 
 NTP Domain	Query %	#APP
 2.android.pool.ntp.org 	75.49 	8
@@ -73,25 +58,20 @@ us.pool.ntp.org 	0.07 	1
 s2m.time.edu.cn 	0.07 	1
 glue.glue1u19589.n1.netalyzr.icsi.berkeley.edu 	0.07 	1
 
-We were suspicious about the domain identity as there is a possibility for
-applications to use NTP port number (123) to establish a UDP session for a
-malicious activity. Analyzing payload information can address our concern but
-it violates users privacy consequently. Instead, we send a NTP query directly to
-the each domain and analyze their respond. We received answer from all the
-domains in the list except “s2m.time.edu.cn ”. According to IPAddress.com
-website the domain is under “China Education and Research Network Center”
-authority. Considering the number of applications which sent NTP query to
-“s2m.time.edu.cn ” and the volume of query that it received, it is not possible
-to make any strong conclusion in regard of its identity. 
+We continue our research by investigating the geographical distribution of NTP
+pool and their android clients. Following list represents domains which recived 
+NTP query from android device of Lumen users. We need to make sure that the domains 
+are NTP servers to discard irrelevant data. User privacy protection prohibits 
+us to evaluate user payload information. Therefore we send NTP quiry to each domains 
+instead and check their replies. All the domaines return NTP reply except 
+s2m.time.edu.cn. IPAddress.com reports that the domain is under "China education 
+and research" authority. 
 
-Comparison the geographic region of generation and service of NTP queries,
-reveals that the queries do not always served by their nearest NTP pool.
-Consequently the communication delay  increases unnecessarily. The following
-table report the volume of queries that each NTP pool serves according to origin
-region of the queries. According to the table several pools such as
-“asia.pool.ntp.org” and “0.us.pool.ntp.org” receive considerable volume of NTP
-queries from outside of their region. It would be consequence of explicit NTP
-pool selection during an Android app development.   
+
+The result climes that multiple NTP pools receive quires from outside of their
+region. For instance asia.pool.ntp.org pool received considerable volume (82.62%)
+of query from Europa. "0.us.pool.ntp.org" experiance the same situation. 
+ 50% volume of its query is originated at Europa.
 
 
 			"Europe"	"North america"	"South america"	"Asia"	"Oceania"
