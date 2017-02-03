@@ -106,7 +106,8 @@ region. This is probably caused by the fact that application developers
 hardcode the NTP pools to be used by their apps. 
 For instance asia.pool.ntp.org pool received considerable volume (82.62%)
 from devices in Europe.
-	[NOTE:	Are those apps implemented by Asian developers?]
+	[NOTE:	Are those apps implemented by Asian developers?
+	Which apps are they?]
 Likewise, "0.us.pool.ntp.org" presents a similar behavior:  
 50% of its queries originated in Europe.
 	[NOTE: Is there any study that has measured the effect
@@ -132,7 +133,6 @@ ro.pool.ntp.org	  100.0		_	_	_	_
 1.time.crdcloud.com	_	  100.0	_	_	_
 us.pool.ntp.org	  100.0		_	_	_	_
 1.us.pool.ntp.org	_	  100.0	_	_	_
-glue.glue1u19589.n1.netalyzr.icsi.berkeley.edu	_	  100.0		_	_	_
 
 FINAL REMARKS
 
