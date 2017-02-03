@@ -1,100 +1,48 @@
-According to recent reports the volume of NTP traffic has been increased
-significantly. Growth of Mobile devices and consequently increment in their
-applications users like Snapchat has been considered as the main reason of
-amplification of NTP traffic. 
-The Lumen give us a unique opportunity to study Android applications behavior
-and analyzing how they utilize NTP.
-
-NTP requests of the following applications are recorded in Haystacks database.
-According to GooglePlay their number of installation is also indicated.
-The applications are sorted according to their number of NTP request which are
-exist in the database. 
-
-ID	Application Name	Number of installation
-1	whatsapp messenger	1,000,000,000 - 5,000,000,000
-2	iheartradio free music & radio	50,000,000 - 100,000,000
-3	zomato - restaurant finder	5,000,000 - 10,000,000
-4	android wear - smartwatch	5,000,000 - 10,000,000
-5	live.me™– live video streaming	5,000,000 - 10,000,000
-6	security - free	1,000,000 - 5,000,000
-7	root master	100,000 - 500,000
-8	coverage map	100,000 - 500,000
-9	root call blocker	100,000 - 500,000
-10	fast one-click root	10,000 - 50,000
-11	timely alarm clock	5,000,000 - 10,000,000
-12	email typeapp - best mail app!	1,000,000 - 5,000,000
-13	webroot secureweb browser	100,000 - 500,000
-14	blue mail - email mailbox	1,000,000 - 5,000,000
-15	clockworkmod tether (no root)	1,000,000 - 5,000,000
-16	faasos - order food online	1,000,000 - 5,000,000
-17	shazam	100,000,000 - 500,000,000
-18	netalyzr	50,000 - 100,000
-19	myshake	100,000 - 500,000
-20	hotels.com – hotel reservation	10,000,000 - 50,000,000
-21	nest	1,000,000 - 5,000,000
-22	officesuite + pdf editor	50,000,000 - 100,000,000
-23	system monitor lite	100,000 - 500,000
-24	officesuite pro + pdf (trial)	10,000,000 - 50,000,000
-25	file commander - file manager	50,000,000 - 100,000,000
-26	travel safety - free for kids	1,000,000 - 5,000,000
-27	lyft - taxi app alternative	10,000,000 - 50,000,000
-28	healthy eater - baby's diet	1,000,000 - 5,000,000
-29	whatscall - free global calls	10,000,000 - 50,000,000
-30	periscope - live video	10,000,000 - 50,000,000
-31	baby panda care	10,000,000 - 50,000,000
-32	onefootball live soccer scores	5,000,000 - 10,000,000
-33	icsi haystack privacy monitor	500 - 1,000
-34	little panda's photo shop	500,000 - 1,000,000
-35	officesuite pro + pdf	1,000,000 - 5,000,000
-36	fish puzzles for kids - lite	100,000 - 500,000
-37	t-mobile	10,000,000 - 50,000,000
-38	lumen privacy monitor -no root	500 - 1,000
-39	cooking fever	50,000,000 - 100,000,000
-40	droid full system information	10,000 - 50,000
-41	heavy machines - free for kids	1,000,000 - 5,000,000
-42	parallel space－multi accounts	10,000,000 - 50,000,000
-43	go90 - mobile tv network	10,000,000 - 50,000,000
-44	uncc nextride	5,000 - 10,000
-45	my shoes - baby panda	1,000,000 - 5,000,000
-46	my baby gets organized	1,000,000 - 5,000,000
-47	panda sharing adventure	500,000 - 1,000,000
-48	toilet training - baby's potty	1,000,000 - 5,000,000
-49	night and day - panda game	500,000 - 1,000,000
-50	animal paradise	1,000,000 - 5,000,000
-51	shazam encore	500,000 - 1,000,000
-52	airbnb	10,000,000 - 50,000,000
-53	t-mobile tv with mobile hd	10,000,000 - 50,000,000
-54	little panda fireman	1,000,000 - 5,000,000
-55	cartwheel by target	10,000,000 - 50,000,000
-56	know your android network	10,000 - 50,000
-57	plex for android	5,000,000 - 10,000,000
-58	subway surfers	500,000,000 - 1,000,000,000
-59	moon explorer: panda astronaut	1,000,000 - 5,000,000
-60	intune company portal	500,000 - 1,000,000
-61	battery doctor (power saver)	100,000,000 - 500,000,000
-62	groove ip voip calls & text	1,000,000 - 5,000,000
-63	makemytrip-flights hotels cabs	10,000,000 - 50,000,000
-64	baby panda's birthday party	1,000,000 - 5,000,000
-65	disney dream treats	1,000,000 - 5,000,000
-66	bike race free motorcycle game	50,000,000 - 100,000,000
-67	car safety - seats	1,000,000 - 5,000,000
-68	drippler - your tech assistant	5,000,000 - 10,000,000
-69	baby panda's supermarket	5,000,000 - 10,000,000
-70	hola free vpn proxy	10,000,000 - 50,000,000
-71	drippler - tech support & tips	5,000,000 - 10,000,000
-72	4 pics 1 word	1,000,000 - 5,000,000
+Dan Drown reports at (ttps://community.ntppool.org/t/recent-ntp-pool-traffic-increase/18) 
+that NTP IPv4 traffic has been increased significantly since December 2013. The 
+new volum of NTP traffic increases the load of NTP servers and reduces their 
+performance consequently.
+Dan Drown further investigations recommend that the orgin of traffic should be
+mobile devices as the traffics come from many different source IPs. His following
+research identify iOS version of Snapchat generate NTP traffic with a high rate.
+Dan Drown work motivate us to look at Android application as a point of view of 
+their NTP activity. The Lumen (https://play.google.com/store/apps/details?id=edu.berkeley.icsi.haystack&hl=en)
+give us a unique opportunity to do the study. It provide information about 
+activity behavior of around 3000 android applicationsupports and has 1200 users 
+from all around the world. 
 
 
-Applications which GoogPlay wrap them in “Tools” category generate the most NTP
-request. Following, “Communication” and “Map & Navigation” categories take the
-second and the third places sequentially.
+Based on Lumen records 72 applications use NTP including highly popular 
+appilication such as whatsapp, subway surfars, shazam, battery doctor and
+officesuit + pfd editor. you can find the list of application and their number 
+of installation at the end of this post.
 
-75,49 % of NTP queries were sent to “2.android.pool.ntp.org”. However just 18%
-of the considered applications generate these queries. The following table
-represents a list of domains which are received NTP query from the applications.
-It also shoes the volume of NTP query which sent to the domains. In addition,
-the popularity of each domain is measured according to number of applications
-that send it a NTP query.
+
+As point of view of the application category 10 out of 32 categoris use NTP. 
+The application from "Tools", "Communication" and "Map & Navigation" categories 
+register the most number of NTP request in Lumen database sequentialy. 
+The NTP query from the first two categories mostly is sent to "2.android.pool.ntp.org" 
+pool which NTP community preserves it for Android specificaly.
+
+Althought there is a specific NTP pool for android applications, only 18% of 
+the application communicate with it. However the pool still replies to 
+significant volume of NTP query (75,49%) which android applications generate.
+This fact recommneds that just  limited number of android applications 
+with high number of installation choos the right NTP pool.
+
+We continue our research by investigating the geographical distribution of NTP
+pool and their android clients. Following list represents domains which recived 
+NTP query from android device of Lumen users. We need to make sure that the domains 
+are NTP servers to discared irrelevant data. User privacy protection prohibits 
+us to evaluate user payload information. Therefore we send NTP quiry to each domains 
+instead and check their replies. All the domaines return NTP reply except 
+s2m.time.edu.cn. IPAddress.com reports that the domain is under "China education 
+and reserach" authority. 
+The result climes that multiple NTP pools receive quries from outside of their
+region. For instance asia.pool.ntp.org pool received considerable volume (82.62%)
+of queiry from Europa. "0.us.pool.ntp.org" experiance the same situation. 
+ 50% volume of its qury is orginated at Europa.
+
 
 
 NTP Domain	Query %	#APP
@@ -170,6 +118,81 @@ considering the Android application category which generate high volume of NTP
 query. It tickles security concern. Also the current trend of selecting NTP pool
 is not efficient and implies unnecessary delay to the communication. 
 
+
+
+ID	Application Name	Number of installation
+1	whatsapp messenger	1,000,000,000 - 5,000,000,000
+2	iheartradio free music & radio	50,000,000 - 100,000,000
+3	zomato - restaurant finder	5,000,000 - 10,000,000
+4	android wear - smartwatch	5,000,000 - 10,000,000
+5	live.me™– live video streaming	5,000,000 - 10,000,000
+6	security - free	1,000,000 - 5,000,000
+7	root master	100,000 - 500,000
+8	coverage map	100,000 - 500,000
+9	root call blocker	100,000 - 500,000
+10	fast one-click root	10,000 - 50,000
+11	timely alarm clock	5,000,000 - 10,000,000
+12	email typeapp - best mail app!	1,000,000 - 5,000,000
+13	webroot secureweb browser	100,000 - 500,000
+14	blue mail - email mailbox	1,000,000 - 5,000,000
+15	clockworkmod tether (no root)	1,000,000 - 5,000,000
+16	faasos - order food online	1,000,000 - 5,000,000
+17	shazam	100,000,000 - 500,000,000
+18	netalyzr	50,000 - 100,000
+19	myshake	100,000 - 500,000
+20	hotels.com – hotel reservation	10,000,000 - 50,000,000
+21	nest	1,000,000 - 5,000,000
+22	officesuite + pdf editor	50,000,000 - 100,000,000
+23	system monitor lite	100,000 - 500,000
+24	officesuite pro + pdf (trial)	10,000,000 - 50,000,000
+25	file commander - file manager	50,000,000 - 100,000,000
+26	travel safety - free for kids	1,000,000 - 5,000,000
+27	lyft - taxi app alternative	10,000,000 - 50,000,000
+28	healthy eater - baby's diet	1,000,000 - 5,000,000
+29	whatscall - free global calls	10,000,000 - 50,000,000
+30	periscope - live video	10,000,000 - 50,000,000
+31	baby panda care	10,000,000 - 50,000,000
+32	onefootball live soccer scores	5,000,000 - 10,000,000
+33	icsi haystack privacy monitor	500 - 1,000
+34	little panda's photo shop	500,000 - 1,000,000
+35	officesuite pro + pdf	1,000,000 - 5,000,000
+36	fish puzzles for kids - lite	100,000 - 500,000
+37	t-mobile	10,000,000 - 50,000,000
+38	lumen privacy monitor -no root	500 - 1,000
+39	cooking fever	50,000,000 - 100,000,000
+40	droid full system information	10,000 - 50,000
+41	heavy machines - free for kids	1,000,000 - 5,000,000
+42	parallel space－multi accounts	10,000,000 - 50,000,000
+43	go90 - mobile tv network	10,000,000 - 50,000,000
+44	uncc nextride	5,000 - 10,000
+45	my shoes - baby panda	1,000,000 - 5,000,000
+46	my baby gets organized	1,000,000 - 5,000,000
+47	panda sharing adventure	500,000 - 1,000,000
+48	toilet training - baby's potty	1,000,000 - 5,000,000
+49	night and day - panda game	500,000 - 1,000,000
+50	animal paradise	1,000,000 - 5,000,000
+51	shazam encore	500,000 - 1,000,000
+52	airbnb	10,000,000 - 50,000,000
+53	t-mobile tv with mobile hd	10,000,000 - 50,000,000
+54	little panda fireman	1,000,000 - 5,000,000
+55	cartwheel by target	10,000,000 - 50,000,000
+56	know your android network	10,000 - 50,000
+57	plex for android	5,000,000 - 10,000,000
+58	subway surfers	500,000,000 - 1,000,000,000
+59	moon explorer: panda astronaut	1,000,000 - 5,000,000
+60	intune company portal	500,000 - 1,000,000
+61	battery doctor (power saver)	100,000,000 - 500,000,000
+62	groove ip voip calls & text	1,000,000 - 5,000,000
+63	makemytrip-flights hotels cabs	10,000,000 - 50,000,000
+64	baby panda's birthday party	1,000,000 - 5,000,000
+65	disney dream treats	1,000,000 - 5,000,000
+66	bike race free motorcycle game	50,000,000 - 100,000,000
+67	car safety - seats	1,000,000 - 5,000,000
+68	drippler - your tech assistant	5,000,000 - 10,000,000
+69	baby panda's supermarket	5,000,000 - 10,000,000
+70	hola free vpn proxy	10,000,000 - 50,000,000
+71	drippler - tech support & tips	5,000,000 - 10,000,000
+72	4 pics 1 word	1,000,000 - 5,000,000
 
 
  
