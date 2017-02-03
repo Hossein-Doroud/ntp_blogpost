@@ -1,10 +1,13 @@
-Dan Drown reports at (ttps://community.ntppool.org/t/recent-ntp-pool-traffic-increase/18) 
-that NTP IPv4 traffic has been increased significantly since December 2013. The 
-new volum of NTP traffic increases the load of NTP servers and reduces their 
-performance consequently.
-Dan Drown further investigations recommend that the orgin of traffic should be
-mobile devices as the traffics come from many different source IPs. His following
-research identify iOS version of Snapchat generate NTP traffic with a high rate.
+A recent post by Dan Drown in the official 
+<a href="https://community.ntppool.org/t/recent-ntp-pool-traffic-increase/18">NTP community forum</a> reported that NTP IPv4 traffic has 
+increased significantly since December 2013: 5x-20x 
+normal traffic levels. Unfortunately, this unusual high load 
+has a direct effect on NTP server performance.
+
+Further investigations by Dan Brown and others researchers revealed 
+that the traffic originated from mobile devices. More detailed analysis tried to 
+illuminate the actual origin, revealing that Snapchat generate NTP traffic at a high rate.
+
 Dan Drown work motivate us to look at Android application as a point of view of 
 their NTP activity. The Lumen (https://play.google.com/store/apps/details?id=edu.berkeley.icsi.haystack&hl=en)
 give us a unique opportunity to do the study. It provide information about 
