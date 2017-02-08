@@ -14,8 +14,8 @@ is also responsible for NTP activity and how they use this
 critical network protocol. 
 The <a href="https://play.google.com/store/apps/details?id=edu.berkeley.icsi.haystack&hl=en">Lumen 
 Privacy Monitor</a> offers us a unique vantage point to capture and 
-analyze accurate traffic traces collected by crowd-sourcing mechanisms
-in user space. We have access to anonymized network flows generated 
+analyse accurate traffic traces collected by crowd-sourcing mechanisms
+in user space. We have access to anonymised network flows generated 
 by more than 3000 mobile apps with real user-stimuli.  
 
 
@@ -56,7 +56,7 @@ Maps & Navigation  	1
 Note that the preInstalled category covers both pre-installed services and applications
 as well as apps not available in Google Play (either because they were removed or 
 because they are available on alternative app stores). Excluding those, most apps
-relying on NTP fall in the  "Educationa", "Tools" and "Communication" categories. 
+relying on NTP fall in the  "Educational”, "Tools" and "Communication" categories. 
 
 
 WHAT NTP POOLS DO MOBILE ANDROID APPS USE?
@@ -74,7 +74,7 @@ Firewall of China.
 
 
 Although there is a specific NTP pool for android applications, 
-<a href="http://www.pool.ntp.org/vendors.html">recommended by the NTP community</a>, only 18% of 
+<a href="http://www.pool.ntp.org/vendors.html">recommended by the NTP community</a>, only 15% of 
 the application seem to communicate with it. However, if we compute
 the volume of requests for each pool, Android's dedicated NTP server 
 accounts for 64.5% of the total NTP requests in our records.
@@ -224,27 +224,27 @@ Educational 	com.sinyee.babybus.dayandnight 	'1.cn.pool.ntp.org', '0.asia.pool.n
 Business 	com.microsoft.windowsintune.companyportal 	'0.pool.ntp.org' 	100,000 - 500,000
 Tools 	edu.berkeley.icsi.netalyzr.android 	 'glue.glue1u19589.n1.netalyzr.icsi.berkeley.edu', 'n1.netalyzr.icsi.berkeley.edu' 	50,000 - 100,000
 Communication 	com.rdx.kyanuserinterface 	 	10,000 - 50,000
-preInstall 	com.fingerprints.fingerprintsensortest 	 	0
-preInstall 	com.qualcomm.embms 	 	0
-preInstall 	com.huawei.android.airsharing 	'time.izatcloud.net',  	0
-preInstall 	com.qualcomm.timeservice 	 'ntp.nict.jp' 	0
-preInstall 	com.samsung.android.fingerprint.service 	 	0
-preInstall 	air.com.oak.oddsocksmob 	 'pool.ntp.org' 	0
-preInstall 	com.android.keychain 	 	0
-preInstall 	com.sinyee.fruit.activity 	'1.cn.pool.ntp.org' 	0
-preInstall 	com.android.development 	 '2.android.pool.ntp.org' 	0
-preInstall 	com.amazon.connectivitydiag 	 	0
-preInstall 	com.sonymobile.screenrecording 	 	0
-preInstall 	com.mediatek.providers.drm 	 	0
-preInstall 	com.lge.qmemoplus 	'asia.pool.ntp.org' 	0
-preInstall 	com.jide.networkconn 	's2m.time.edu.cn' 	0
-preInstall 	com.lge.sync 	'asia.pool.ntp.org' 	0
-preInstall 	com.android.location.fused 	 '2.android.pool.ntp.org' 	0
-preInstall 	com.lge.sprinthiddenmenu 	 	0
-preInstall 	com.sonymobile.simlock.service 	 	0
-preInstall 	com.motricity.verizon.ssodownloadable 	 '2.android.pool.ntp.org' 	0
-preInstall 	com.google.android.backuptransport 	 'pool.ntp.org', '2.android.pool.ntp.org' 	0
-preInstall 	com.android.vending 	'pool.ntp.org' 	0
-preInstall 	com.qualcomm.atfwd 	 '2.android.pool.ntp.org' 	0
-preInstall 	com.samsung.helphub 	 	0
-preInstall 	com.sec.knox.switcher 	 'north-america.pool.ntp.org' 	0
+preInstall 	com.fingerprints.fingerprintsensortest 	 	Not Available
+preInstall 	com.qualcomm.embms 	 	Not Available
+preInstall 	com.huawei.android.airsharing 	'time.izatcloud.net',  	Not Available
+preInstall 	com.qualcomm.timeservice 	 'ntp.nict.jp' 	Not Available
+preInstall 	com.samsung.android.fingerprint.service 	 	Not Available
+preInstall 	air.com.oak.oddsocksmob 	 'pool.ntp.org' 	Not Available
+preInstall 	com.android.keychain 	 	Not Available
+preInstall 	com.sinyee.fruit.activity 	'1.cn.pool.ntp.org' 	Not Available
+preInstall 	com.android.development 	 '2.android.pool.ntp.org' 	Not Available
+preInstall 	com.amazon.connectivitydiag 	 	Not Available
+preInstall 	com.sonymobile.screenrecording 	 	Not Available
+preInstall 	com.mediatek.providers.drm 	 	Not Available
+preInstall 	com.lge.qmemoplus 	'asia.pool.ntp.org' 	Not Available
+preInstall 	com.jide.networkconn 	's2m.time.edu.cn' 	Not Available
+preInstall 	com.lge.sync 	'asia.pool.ntp.org' 	Not Available
+preInstall 	com.android.location.fused 	 '2.android.pool.ntp.org' 	Not Available
+preInstall 	com.lge.sprinthiddenmenu 	 	Not Available
+preInstall 	com.sonymobile.simlock.service 	 	Not Available
+preInstall 	com.motricity.verizon.ssodownloadable 	 '2.android.pool.ntp.org' 	Not Available
+preInstall 	com.google.android.backuptransport 	 'pool.ntp.org', '2.android.pool.ntp.org' 	Not Available
+preInstall 	com.android.vending 	'pool.ntp.org' 	Not Available
+preInstall 	com.qualcomm.atfwd 	 '2.android.pool.ntp.org' 	Not Available
+preInstall 	com.samsung.helphub 	 	Not Available
+preInstall 	com.sec.knox.switcher 	 'north-america.pool.ntp.org' 	Not Available
