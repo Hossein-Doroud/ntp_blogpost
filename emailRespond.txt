@@ -1,27 +1,40 @@
 Dear all,
 
-Many thanks for your feedbacks.
+Many thanks for your feedback and suggestions. The question that you’ve 
+raised regarding load balancing are very interesting.
 
-Although NTP organisation encourage vendors and developers to apply for vendor
-zone (vendor pool), I could not find any explanation for difference between
-vendor zones and regular NTP pools.I assume servers of vendor zone should be
-optimised respectively. I asked in the official NTP mailing list for any
-documentation relevant to android.pool.ntp.org as well as load-balancing schema.
-Their answer can help us to have a better understanding about NTP load-balancing
-schema and about the expected use of each pool. it also can explain why NTP
-organisation prefers to create a new zones (pool) for app developer instead
-of increasing the number of regional pool servers.
+NTP org encourages vendors and developers to apply for vendor zones 
+(e.g., a vendor pool, e.g., *vendor*.ntp.org as the Android one). 
+However, I could not find any explanation regarding the use of 
+specific vendor zones and regular NTP pools from a client perspective.
 
-There is not any record in our dataset related to google time server.
-Therefore we can not find any evidence about google influence on developer
-to select specific NTP server. However it can be interesting to identify
-parameters which motivate developers to select a given NTP provider.
+I assume servers of vendor zone should be optimised somehow or expect 
+a given workload. I have asked in the official NTP mailing list for 
+any documentation relevant to android.pool.ntp.org as well as its 
+load-balancing schema.
 
-Stephan the question that you’ve raised regarding load balancing are very interesting.
-Do you think you can measure them using RIP Atlas probes as they’re located
-all over the world?
-Following I can do measurement on IP addresses which resolve to multiple pools
-or do investigation on how ntp.org uses IPv6.
+Hopefully, their answer can help us to have a better understanding 
+about NTP's load-balancing schema and about the expected use of each 
+pool. It will help us as well to explain why NTP org prefers to create 
+a new zones (pool) for app developer instead of increasing the number 
+of regional pool servers.
 
-Best regard,
+We don't have any record in our dataset about the google time server that
+you've mentioned so we cannot tell anything about Google's influence on 
+app developers to select specific NTP server. The Android source code 
+seems to hardcode the android NTP server (dual stack based on your hint):
+
+https://android.googlesource.com/platform/frameworks/base/+/40caf8f4432acd2b9d9230b2b1371660521415c2/core/res/res/values/config.xml#802
+
+TODO: TALK ABOUT IP OVERLAP
+
+TODO: TALK ABOUT IPV6 USAGE. NOTE THAT ONE THING IS THE DUAL-STACK SUPPORT ON THE SERVER SIDE AND ANOTHER THING IS DUAL STACK SUPPORT ON THE ISP NETWORK. IF THE ISP DOES NOT SUPPORT IPV6, THEN YOU CANNOT REALLY CONNECT OVER IPV6 SO YOU NEED TO DO THIS ANALYSIS ON A PER-ISP BASES USING THE PUBLIC IP ADDRESS.
+
+It'd be interesting finding the reasoning behind NTP usage by app developers.
+
+Do you think that it'd be possible to measure the load balancing policies
+using the RIPE Atlas probes as they’re located all over the world? I'd be
+interested in finding out more details about it.
+
+Best regards,
 Hossein
