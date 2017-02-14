@@ -26,9 +26,13 @@ seems to hardcode the android NTP server (dual stack based on your hint):
 
 https://android.googlesource.com/platform/frameworks/base/+/40caf8f4432acd2b9d9230b2b1371660521415c2/core/res/res/values/config.xml#802
 
-TODO: TALK ABOUT IP OVERLAP
+There are 66 ipv4 ip addresses to resolve ntp pools in our dataset. Each ip address resolve to multiple pools either at the same region, or vendor pool like 2.android.pool.ntp.org. The fact recommends that ntp.org share a set of NTP servers with different domains considering the same region.
 
 TODO: TALK ABOUT IPV6 USAGE. NOTE THAT ONE THING IS THE DUAL-STACK SUPPORT ON THE SERVER SIDE AND ANOTHER THING IS DUAL STACK SUPPORT ON THE ISP NETWORK. IF THE ISP DOES NOT SUPPORT IPV6, THEN YOU CANNOT REALLY CONNECT OVER IPV6 SO YOU NEED TO DO THIS ANALYSIS ON A PER-ISP BASES USING THE PUBLIC IP ADDRESS.
+
+hossein: I DID NOT FIND ANY IPV6 IN NONE OF NTP REQUEST. ANALYSING ISP’S IS NOT CLEAR
+ FOR ME. I WOULD BE REALY GRATEFUL IF YOU EXPLAIN ME HOW TO DO THE ANALYS IN YOUR
+CONVENIENT TIME.
 
 It'd be interesting finding the reasoning behind NTP usage by app developers.
 
